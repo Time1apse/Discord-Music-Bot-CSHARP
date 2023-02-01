@@ -10,6 +10,19 @@
 
   <ItemGroup>
     <PackageReference Include="Discord.Net" Version="3.9.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Victoria" Version="6.0.1026" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="application.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>application.txt</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
 
 </Project>
